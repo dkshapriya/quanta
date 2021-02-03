@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>login-page</title>
 	<meta charset="utf-8">
-	<script src="js/javascript.js"></script>
-	<script>
-		console.log(x);
-	</script>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+<style>
+	*{color: #fff}
+	.bg{background: url("cover.jpg") no-repeat; width: 100%; height: 100vh; background-size: cover; }
+	.form-container{border: 0px solid #fff; padding: 50px 60px; margin-top: 20vh; -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+		-moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+		box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);}  
+</style>
 <body>
-	<h1>hello coursera!</h1>
+	<div class="container-fluid bg">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+			<form class="form-container">
+			<h1>Login Form</h1>
+		  	<div class="form-group">
+		    	<label for="exampleInputEmail1">Email</label>
+		    	<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"  name="mail">
+		  	</div>
+		  	<div class="form-group">
+		    	<label for="exampleInputPassword1">Password</label>
+		    	<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"  name="pwd">
+		  	</div>
+		  	<div class="checkbox">
+		    	<label>
+		      	<input type="checkbox"> Remember me
+		    	</label>
+		  	</div>
+		  	<button type="submit" class="btn btn-success btn-block">Submit</button>
+			</form>
+			<script language="javascript">
+			function check(form)
+			{
+				if(form.mail.value == "diksha@gmail.com" && form.pwd.value == "123")
+					{
+						window.open("https://in.linkedin.com/")
+					}
+				else
+				{
+					alert("The username and password does not match")
+				}
+			}
+		</script>
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12"></div>
+		</div>
+	</div>
 </body>
 </html>
