@@ -1,0 +1,1 @@
+package hibernate.demo.entity;
